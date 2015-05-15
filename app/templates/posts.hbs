@@ -1,7 +1,7 @@
 <h4>Posts Index</h4>
 <p>Code word: {{codeWord}}</p>
 <p>Posts will be listed here, with links to individual posts.</p>
-{{#each post in posts}}
-  <p>{{title}}</p>
+{{#each post in model}}
+  <p>{{post.title}}</p>
 {{/each}}
 <p>After list...</p>

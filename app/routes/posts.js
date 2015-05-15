@@ -1,6 +1,7 @@
 var PostsRoute = Ember.Route.extend({
   setupController: function(controller, posts) {
     controller.set('codeWord', 'CODERIFIC');
+    controller.set('model', posts);
   },
   model: function() {
     return posts;
